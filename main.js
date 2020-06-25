@@ -72,7 +72,9 @@ const firstIndex = (str) => {
     let count = 0;
     while (count < str.length) {
         if (str[count] === 'u') {
-            console.log(str.search('u'));
+            // console.log(str.search('u'));
+            console.log(count);
+            return
         }
         count++;
     }
@@ -85,13 +87,33 @@ const firstIndexAgain = (str) => {
     while (count < str.length) {
         if (str[count] === 'u') {
             console.log(str.search('u'));
+            return
         } else {
             console.log(str.search('u'))
+            return
         }
         count++;
     }
 }
 firstIndexAgain("I'm Canadian.");
+firstIndexAgain('You picked the wrong house, bub.');
+
+// firstIn = (str) => {
+//     let found = false;
+//     let i = 0;
+//     while (i < str.length) {
+//         if (str[i] === 'u' && found === 'false') {
+// console.log(i);
+// found = true;
+//         }
+// i++;
+//     }
+//     if (found === false) {
+//         console.log(-1)
+
+//     }
+// }
+
 
 
 // let i = start;
