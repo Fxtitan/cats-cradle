@@ -3,15 +3,31 @@ const challenge = (num) => {
 }
 console.log(challenge(1));
 
+//this is number 2;
+// const firstFive = (str) => {
+// let abc = 'aeiou';
+// let count = 0;
+// let i = 0;
+
+// while (i < str.length) {
+// if (abc.includes(str[i]) && count < 5) {
+// console.log(str[i])
+// count++
+// }
+// }
+// }
+// firstFive('Regular expressions are for term 2.');
+
+//this is number 1
 const vowels = (str) => {
     for (count = 0; count < str.length; count++) {
         if (str[count] === 'a' || str[count] === 'e' || str[count] === 'i'|| str[count] === 'o' || str[count] === 'u') {
-            console.log(str.charAt(count));
+            console.log(str[count]);
             count++;
         }
     }
 }
-vowels('Hello')
+vowels('Regular expressions are for term 2.')
 console.log(challenge(3));
 
 const everyThird = (str) => {
@@ -26,12 +42,17 @@ console.log(challenge(4));
 
 const firstFour = (str, num) => {
     let count = 0;
-    while (count < str.length) {
-        console.log(str[count]);
-        count += 4;
+    let i = num;
+    while (i < str.length) {
+        if (count < 4) {
+            console.log(str[i]);
+            count++
+        }
+        i++;
     }
 }
-firstFour("Oh hi, I didn't see you there. Welcome.", 4);
+firstFour("Oh hi, I didn't see you there. Welcome", 4);
+firstFour("Oh hi, I didn't see you there. Welcome", 36);
 console.log(challenge(5));
 
 const everyYou = (str) => {
@@ -71,6 +92,19 @@ const firstIndexAgain = (str) => {
     }
 }
 firstIndexAgain("I'm Canadian.");
+
+
+// let i = start;
+// while (i < start + 4 && i < str.length) {
+//     console.log(str[i];)
+// } params (str, start)
+
+// function fourAfter(word, start) {   
+// let end = start + 4;    
+// let beginning = start + 0;    
+// while(beginning < end) {      
+// console.log(word[beginning]);    
+// beginning++;}}
 
 
 
